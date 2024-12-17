@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="/bootstrap/bootstrap-5.0.2-dist/Project_Shop.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!--link  for slide  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+  <!-- menu -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary box-shadow sticky-top">
+    <div class="container d-flex justify-content-between   align-items-center">
+      <a class="navbar-brand order-lg-0" href="#">
+        <img src="/bootstrap/pic/img_bag_icon.jpg" alt="" width="60px" class="rounded-circle">
+        <span class="text-uppercase text-dark ">Shop Now</span>
+      </a>
+      <div class="order-lg-2">
+        <button type="button" class="position-relative btn">
+          <i class="fa-solid fa-heart"></i>
+          <span class="position-absolute top-0 translate-middle bg-danger badge  start-100"></span>
+        </button>
+        <button type="button" class="position-relative btn">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <span class="position-absolute top-0 translate-middle bg-danger  badge  start-100"></span>
+        </button>
+        <button type="button" class="position-relative btn">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <span class="position-absolute top-0 translate-middle bg-danger badge  start-100"></span>
+        </button>
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"><i class="fa-solid fa-bars"></i></span>
+      </button>
+      <div class="collapse navbar-collapse order-lg-1" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item text-center bd py-3 ms-4  mx-2">
+            <a class="nav-link text-uppercase text-dark  " aria-current="page"  href="Project_Shop.html">Home</a>
+          </li>
+          <li class="nav-item text-center bd py-3 mx-2">
+            <a class="nav-link text-uppercase text-dark" aria-current="page" href="collection.html">Collection</a>
+          </li>
+          <li class="nav-item text-center bd py-3 mx-2">
+            <a class="nav-link text-uppercase text-dark" aria-current="page" href="special.html">Speciala</a>
+          </li> 
+          <li class="nav-item text-center bd py-3 mx-2">
+            <a class="nav-link text-uppercase text-dark" aria-current="page" href="Blog.html">Blogs</a>
+          </li>
+          <li class="nav-item text-center bd py-3 mx-2">
+            <a class="nav-link text-uppercase text-dark" aria-current="page" href="about.html">About Us</a>
+          </li>
+          <li class="nav-item text-center py-3 mx-2">
+            <a class="nav-link text-uppercase text-dark" aria-current="page" href="popular.html">Popular</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Sile -->
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel ">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner ">
+      <div class="carousel-item active">
+        <img src="/Image/banner3.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>First slide label</h5>
+          <p>Some representative placeholder content for the first slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="/Image/banner3.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Second slide label</h5>
+          <p>Some representative placeholder content for the second slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="/Image/banner3.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Third slide label</h5>
+          <p>Some representative placeholder content for the third slide.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!-- Collection -->
+  <div class="collection">
+    <div class="container py-5">
+      <div class="title text-center ">
+        <h2 class="d-inline-block position-relative  ">New Collection</h2>
+      </div>
+      <div class="text-center mt-5">
+        <button type="button" class="btn me-2 px-4 py-2 mb-2" id="button">All</button>
+        <button type="button" class="btn me-2 px-4 py-2 mb-2" id="button">Best Seller</button>
+        <button type="button" class="btn me-2 px-4 py-2 mb-2" id="button">New Arrivals</button>
+        <button type="button" class="btn me-2 px-4 py-2 mb-2" id="button">Featered</button>
+      </div>
+      <div class="collection-list row mt-5">
+        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12 mb-4">
+          <div class="collection-img position-relative product_img" data-id="1">
+            <img src="/Image/clothes1.png" alt="" class="w-100">
+            <span class="position-absolute d-flex align-items-center justify-content-center  text-white " >sale</span>
+          </div>
+          <div class="text-center">
+            <div class="star mt-3">
+              <span><i class="fa-solid fa-star text-warning  "></i></span>
+              <span><i class="fa-solid fa-star text-warning  "></i></span>
+              <span><i class="fa-solid fa-star text-warning  "></i></span>
+              <span><i class="fa-solid fa-star text-warning  "></i></span>
+              <span><i class="fa-solid fa-star text-warning  "></i></span>
+
+            </div>
+            <h6 class="mt-2 text-muted ">Clothes</h6>
+            <h5 class="fw-bold price">$45.55</h5>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12 mb-4 Product">
+          <div class="collection-img position-relative product_img" data-id="2">
+            <img src="/Image/clothes2.png" alt="" class="w-100">
+            <span class="position-absolute d-flex align-items-center justify-content-center  text-white " >sale</span>
+          </div>
+          <div class="text-center">
+            <div class="star mt-3">
+              <span><i class="fa-solid fa-star text-warning  "></i></span>
+              <span><i class="fa-solid fa-star text-warning  "></i></span>
+              <span><i class="fa-solid fa-star text-warning  "></i></span>
+              <span><i class="fa-solid fa-star text-warning  "></i></span>
+              <span><i class="fa-solid fa-star text-warning  "></i></span>
+
+            </div>
+            <h6 class="mt-2  text-muted ">Clothes</h6>
+            <h5 class="fw-bold price">$45.55</h5>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12 mb-4">
+          <div class="collection-img position-relative product_img "data-id="3">
+            <img src="/Image/clothes3.png" alt="" class="w-100">
+            <span class="position-absolute d-flex align-items-center justify-content-center  text-white " >sale</span>
+          </div>
+          <div class="text-center">
+            <div class="star mt-3">
+              <span><i class="fa-solid fa-star text-warning  "></i></span>
+              <span><i class="fa-solid fa-star text-warning  "></i></span>
+              <span><i class="fa-solid fa-star text-warning  "></i></span>
+              <span><i class="fa-solid fa-star text-warning  "></i></span>
+              <span><i class="fa-solid fa-star text-warning  "></i></span>
+            </div>
+            <h6 class="mt-2  text-muted ">Clothes</h6>
+            <h5 class="fw-bold price">$45.55</h5>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12 mb-4">
+          <div class="collection-img position-relative product_img "data-id="4">
+            <img src="/Image/clothes4.png" alt="" class="w-100">
+            <span class="position-absolute d-flex align-items-center justify-content-center  text-white " >sale</span>
+          </div>
+          <div class="text-center">
+            <div class="star mt-3">
+              <span><i class="fa-solid fa-star text-warning  "></i></span>
+              <span><i class="fa-solid fa-star text-warning  "></i></span>
+              <span><i class="fa-solid fa-star text-warning  "></i></span>
+              <span><i class="fa-solid fa-star text-warning  "></i></span>
+              <span><i class="fa-solid fa-star text-warning  "></i></span>
+            </div>
+            <h6 class="mt-2  text-muted ">Clothes</h6>
+            <h5 class="fw-bold price ">$45.55</h5>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12 mb-4">
+          <div class="collection-img position-relative product_img"data-id="5">
+            <img src="/Image/clothes5.png" alt="" class="w-100">
+            <span class="position-absolute d-flex align-items-center justify-content-center  text-white " >sale</span>
+          </div>
+          <div class="text-center">
+            <div class="star mt-3">
+              <span><i class="fa-solid fa-star text-warning  "></i></span>
+              <span><i class="fa-solid fa-star text-warning  "></i></span>
+                    <span><i class="fa-solid fa-star text-warning  "></i></span>
+              <span><i class="fa-solid fa-star text-warning  "></i></span>
+              <span><i class="fa-solid fa-star text-warning  "></i></span>
+
+            </div>
+            <h6 class="mt-2  text-muted ">Clothes</h6>
+            <h5 class="fw-bold price">$45.55</h5>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12 mb-4">
+          <div class="collection-img position-relative product_img "data-id="6">
+            <img src="/Image/clothes6.png" alt="" class="w-100">
+            <span class="position-absolute d-flex align-items-center justify-content-center  text-white " >sale</span>
+          </div>
+          <div class="text-center">
+            <div class="star mt-3">
+              <span><i class="fa-solid fa-star text-warning  "></i></span>
+              <span><i class="fa-solid fa-star text-warning  "></i></span>
+              <span><i class="fa-solid fa-star text-warning  "></i></span>
+              <span><i class="fa-solid fa-star text-warning  "></i></span>
+              <span><i class="fa-solid fa-star text-warning  "></i></span>
+
+            </div>
+            <h6 class="mt-2  text-muted ">Clothes</h6>
+            <h5 class="fw-bold price">$45.55</h5>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12 mb-4">
+          <div class="collection-img position-relative product_img"data-id="7">
+            <img src="/Image/clothes14.jpg" alt="" class="w-100">
+            <span class="position-absolute d-flex align-items-center justify-content-center  text-white " >sale</span>
+          </div>
+          <div class="text-center">
+            <div class="star mt-3">
+              <span><i class="fa-solid fa-star text-warning  "></i></span>
+              <span><i class="fa-solid fa-star text-warning  "></i></span>
+              <span><i class="fa-solid fa-star text-warning  "></i></span>
+              <span><i class="fa-solid fa-star text-warning  "></i></span>
+              <span><i class="fa-solid fa-star text-warning  "></i></span>
+
+            </div>
+            <h6 class="mt-2  text-muted ">Clothes</h6>
+            <h5 class="fw-bold ">$45.55</h5>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12 mb-4">
+          <div class="collection-img position-relative product_img "data-id="8">
+            <img src="/Image/clothes12.jpg" alt="" class="w-100">
+            <span class="position-absolute d-flex align-items-center justify-content-center  text-white " >sale</span>
+          </div>
+          <div class="text-center">
+            <div class="star mt-3">
+              <span><i class="fa-solid fa-star text-warning  "></i></span>
+              <span><i class="fa-solid fa-star text-warning  "></i></span>
+              <span><i class="fa-solid fa-star text-warning  "></i></span>
+              <span><i class="fa-solid fa-star text-warning  "></i></span>
+              <span><i class="fa-solid fa-star text-warning  "></i></span>
+
+            </div>
+            <h6 class="mt-2  text-muted ">Clothes</h6>
+            <h5 class="fw-bold price">$45.55</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Special -->
+  <section class="special py-5">
+      <div class="container">
+        <div class="title text-center">
+          <h2 class="position-relative d-inline-block ">Specials Selection</h2>
+        </div>
+        <div class="special-list row">
+          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12 mt-5">
+            <div class="special-img position-relative product_img" data-id="9">
+              <img src="/Image/outfit1.jpg" alt="" class="w-100 ">
+              <span class="position-absolute fs-4 d-flex align-items-center justify-content-center  "><i class="fa-solid fa-heart"></i></span>
+            </div>
+            <div class="text-center py-3">
+              <p class=" text-muted title">Clothes Outfit</p>
+              <h5 class="fw-bold price">$50.55</h5>
+              <button type="button" class="btn px-4 py-2 border-danger " id="button">Add to Card</button>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12 mt-5">
+            <div class="special-img position-relative product_img"  data-id="10">
+              <img src="/Image/outfit2.jpg" alt="" class="w-100 ">
+              <span class="position-absolute fs-4 d-flex align-items-center justify-content-center  "><i class="fa-solid fa-heart"></i></span>
+            </div>
+            <div class="text-center py-3">
+              <p class=" text-muted title">Clothes Outfit</p>
+              <h5 class="fw-bold price">$50.55</h5>
+              <button type="button" class="btn px-4 py-2 border-danger " id="button">Add to Card</button>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12 mt-5">
+            <div class="special-img position-relative product_img" data-id="11">
+              <img src="/Image/outfit4.jpg" alt="" class="w-100 ">
+              <span class="position-absolute fs-4 d-flex align-items-center justify-content-center "><i class="fa-solid fa-heart"></i></span>
+            </div>
+            <div class="text-center py-3">
+              <p class=" text-muted title">Clothes Outfit</p>
+              <h5 class="fw-bold price">$50.55</h5>
+              <button type="button" class="btn px-4 py-2 border-danger  " id="button">Add to Card</button>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12 mt-5">
+            <div class="special-img position-relative product_img" data-id="12">
+              <img src="/Image/outfit5.jpg" alt="" class="w-100 ">
+              <span class="position-absolute fs-4 d-flex align-items-center justify-content-center  "><i class="fa-solid fa-heart"></i></span>
+            </div>
+            <div class="text-center py-3">
+              <p class=" text-muted title">Clothes Outfit</p>
+              <h5 class="fw-bold price">$50.55</h5>
+              <button type="button" class="btn px-4 py-2 border-danger " id="button">Add to Card</button>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12 mt-5">
+            <div class="special-img position-relative product_img" data-id="13">
+              <img src="/Image/outfit8.jpg" alt="" class="w-100 ">
+              <span class="position-absolute fs-4 d-flex align-items-center justify-content-center  "><i class="fa-solid fa-heart"></i></span>
+            </div>
+            <div class="text-center py-3">
+              <p class=" text-muted title">Clothes Outfit</p>
+              <h5 class="fw-bold price">$50.55</h5>
+              <button type="button" class="btn px-4 py-2 border-danger " id="button">Add to Card</button>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12 mt-5">
+            <div class="special-img position-relative product_img" data-id="14">
+              <img src="/Image/outfit10.jpg" alt="" class="w-100 ">
+              <span class="position-absolute fs-4 d-flex align-items-center justify-content-center  "><i class="fa-solid fa-heart"></i></span>
+            </div>
+            <div class="text-center py-3">
+              <p class=" text-muted title">Clothes Outfit</p>
+              <h5 class="fw-bold price">$50.55</h5>
+              <button type="button" class="btn px-4 py-2 border-danger" id="button">Add to Card</button>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12 mt-5">
+            <div class="special-img position-relative product_img" data-id="15">
+              <img src="/Image/outfit11.jpg" alt="" class="w-100 ">
+              <span class="position-absolute fs-4 d-flex align-items-center justify-content-center  "><i class="fa-solid fa-heart"></i></span>
+            </div>
+            <div class="text-center py-3">
+              <p class=" text-muted ">Clothes Outfit</p>
+              <h5 class="fw-bold ">$50.55</h5>
+              <button type="button" class="btn px-4 py-2 border-danger" id="button">Add to Card</button>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12 mt-5">
+            <div class="special-img position-relative product_img" data-id="16">
+              <img src="/Image/outfit9.jpg" alt="" class="w-100 ">
+              <span class="position-absolute fs-4 d-flex align-items-center justify-content-center  "><i class="fa-solid fa-heart"></i></span>
+            </div>
+            <div class="text-center py-3">
+              <p class=" text-muted title">Clothes Outfit</p>
+              <h5 class="fw-bold price">$50.55</h5>
+              <button type="button" class="btn px-4 py-2 border-danger " id="button">Add to Card</button>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+
+  </section>
+  <!-- Offer -->
+  <section class="offer py-5">
+    <div class="row width text-center d-flex align-items-center justify-content-lg-start text-lg-start ms-lg-5  ">
+      <div class="offer-centent">
+        <h5 class="text-white fw-bold mt-3 mb-3 ms-4">Discount up to 40%</h5>
+        <h2 class="text-white mb-4 fw-bold ">Grand sale offer!</h2>
+        <button type="button" class="btn btn-light py-2 px-4 ms-5" id="button">Buy Now</button>
+      </div>
+    </div>
+  </section>
+  <!-- Blog -->
+  <section class="blog py-5">
+    <div class="container">
+      <div class="title text-center py-5">
+        <h2 class="position-relative d-inline-block ">Our Latest Blog</h2>
+      </div>
+      <div class="row bg-light gy-5 ">
+        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 card border-0  ">
+          <img src="/Image/Blog5.jpg" alt="">
+          <div class="card-title py-3 ">
+            <h3 class="fw-bold ">Lorem ipsum dolor sit amet.Lorem,ipsum dolor.</h3>
+          </div>
+          <div class="card-text ">
+            <p class="text-muted ">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi deleniti ea repellendus rerum autem reprehenderit. Ab cupiditate quaerat nobis error?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta, porro?</p>
+          </div>
+          <p><b>Author:</b>&emsp;John Doe</p>
+          <button type="button" class="btn" id="button1">Read More</button>
+
+
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 card border-0 ">
+          <img src="/Image/blog8.jpg" alt="">
+          <div class="card-title py-3 ">
+            <h3 class="fw-bold ">Lorem ipsum dolor sit amet.Lorem,ipsum dolor.</h3>
+          </div>
+          <div class="card-text ">
+            <p class="text-muted ">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi deleniti ea repellendus rerum autem reprehenderit. Ab cupiditate quaerat nobis error?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta, porro?</p>
+          </div>
+          <p><b>Author:</b>&emsp;John Doe</p>
+          <button type="button" class="btn " id="button1">Read More</button>
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 card border-0 ">
+          <img src="/Image/Blog6.jpg" alt="">
+          <div class="card-title py-3 ">
+            <h3 class="fw-bold ">Lorem ipsum dolor sit amet.Lorem,ipsum dolor.</h3>
+          </div>
+          <div class="card-text ">
+            <p class="text-muted ">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi deleniti ea repellendus rerum autem reprehenderit. Ab cupiditate quaerat nobis error?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta, porro?</p>
+          </div>
+          <p><b>Author:</b>&emsp;John Doe</p>
+          <button type="button" class="btn" id="button1">Read More</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- About -->
+  <section class="about py-5 ">
+    <div class="container">
+      <div class="row gx-5">
+        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 order-lg-1 ">
+          <div class="title text-center py-4 text-lg-start align-items-lg-start ms-4">
+            <h2 class="position-relative d-inline-block ">About Us</h2>
+          </div>
+          <h5 class="text-muted pb-3">Lorem, ipsum list-group-item dolor sit amet consectetur adipisicing elit.</h5>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos repudiandae saepe ipsam iste rerum excepturi consectetur obcaecati ullam atque. Iste sapiente asperiores aliquam non quidem, earum eius rem aspernatur cupiditate?</p>
+        </div>
+        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+          <img src="/Image/banner2.jpg" alt="" class="img-fluid ">
+      </div>
+    </div>
+  </section>
+  <!-- Popular -->
+  <section class="popular py-5">
+    <div class="container">
+      <div class="title text-center">
+        <h2 class="position-relative d-inline-block ">Popular of this Year</h2>
+      </div>
+      <div class="row">
+        <div class="col-xl-4 col-lg-4 col-md-6 row gy-3">
+          <h5><b>Top Rate</b></h5>
+          <div class="d-flex product_img" data-id="17">
+            <img src="/Image/top-rate2.jpg" alt="" class="w-25 me-3">
+            <span>
+              <p class="mb-0 title">Blue Shirt</p>
+              <p><b class="price">$22.45</b></p>
+            </span>
+          </div>
+          <div class="d-flex product_img" data-id="18">
+            <img src="/Image/top-rate3.jpg" alt="" class="w-25 me-3">
+            <span>
+              <p class="mb-0 title">Blue Shirt</p>
+              <p><b class="price">$22.45</b></p>
+            </span>
+          </div>
+          <div class="d-flex product_img" data-id="19">
+            <img src="/Image/top-rate4.jpg" alt="" class="w-25 me-3">
+            <span>
+              <p class="mb-0 title">Blue Shirt</p>
+              <p><b class="price">$22.45</b></p>
+            </span>
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-6 row gy-3">
+          <h5><b>Top Selling</b></h5>
+          <div class="d-flex product_img" data-id="20">
+            <img src="/Image/top-selling.jpg" alt="" class="w-25 me-3">
+            <span>
+              <p class="mb-0 title">Blue Shirt</p>
+              <p><b class="price">$22.45</b></p>
+            </span>
+          </div>
+          <div class="d-flex product_img" data-id="21">
+            <img src="/Image/top-selling4.jpg" alt="" class="w-25 me-3">
+            <span>
+              <p class="mb-0 title">Blue Shirt</p>
+              <p><b class="price">$22.45</b></p>
+            </span>
+          </div>
+          <div class="d-flex product_img" data-id="22">
+            <img src="/Image/top-selling3.jpg" alt="" class="w-25 me-3">
+            <span>
+              <p class="mb-0 title">Blue Shirt</p>
+              <p><b class="price">$22.45</b></p>
+            </span>
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-6 row gy-3">
+          <h5><b>On Sale</b></h5>
+          <div class="d-flex product_img" data-id="23">
+            <img src="/Image/on-sale.jpg" alt="" class="w-25 me-3">
+            <span>
+              <p class="mb-0 title">Blue Shirt</p>
+              <p><b class="price">$22.45</b></p>
+            </span>
+          </div>
+          <div class="d-flex product_img" data-id="24">
+            <img src="/Image/on-sale2.jpg" alt="" class="w-25 me-3">
+            <span>
+              <p class="mb-0 title">Blue Shirt</p>
+              <p><b class="price">$22.45</b></p>
+            </span>
+          </div>
+          <div class="d-flex product_img" data-id="25">
+            <img src="/Image/on-sale1.jpg" alt="" class="w-25 me-3">
+            <span>
+              <p class="mb-0 title">Blue Shirt</p>
+              <p><b class="price">$22.45</b></p>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--Subcribe-->
+  <section class="subcribe py-5">
+    <div class="container">
+      <div class="title text-center">
+        <h2 class="position-relative d-inline-block ">New subcribe</h2>
+        <p class="text-center text-muted py-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus sequi corrupti dignissimos quam quia minus? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia illum odio autem quas ut ipsum.</p>
+        <div class="input-group d-flex justify-content-center align-items-center w-100">
+          <input type="email" name="email" id="email" placeholder="Enter your Email..." class="circle">
+          <button type="submit" class="circle1">Subscribe</button>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <!-- footer -->
+  <footer class="py-5 bg-dark  ">
+    <div class="container">
+      <div class="row text-white gy-5">
+        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
+          <a href="#" class="text-decoration-none text-white  navbar-brand fw-bold ">SHOP NOW</a>
+          <h6 class="mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, deleniti reprehenderit officiis veritatis incidunt ullam a non suscipit voluptate iste iusto quam. Ullam architecto quibusdam aut repellendus, voluptate Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, et. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut, facere?</h6>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
+          <h5 class="fw-bold ">LINKS</h5>
+          <ul class="list-unstyled ">
+            <li class="my-3">
+              <a href="#" class="text-white text-decoration-none"><i class="fas fa-chevron-right"></i>HOME</a>
+            </li>
+          </ul>
+          <ul class="list-unstyled ">
+            <li class="my-3">
+              <a href="#" class="text-white text-decoration-none"><i class="fas fa-chevron-right"></i>HOME</a>
+            </li>
+          </ul>
+          <ul class="list-unstyled ">
+            <li class="my-3">
+              <a href="#" class="text-white text-decoration-none"><i class="fas fa-chevron-right"></i>COLLECTION</a>
+            </li>
+          </ul>
+          <ul class="list-unstyled ">
+            <li class="my-3">
+              <a href="#" class="text-white text-decoration-none"><i class="fas fa-chevron-right"></i>BLOGS</a>
+            </li>
+          </ul>
+          <ul class="list-unstyled ">
+            <li class="my-3">
+              <a href="#" class="text-white text-decoration-none"><i class="fas fa-chevron-right"></i>ABOUT US</a>
+            </li>
+          </ul>
+
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
+          <h5 class="fw-bold mb-3 ">CONTACT US</h5>
+          <span class="d-flex ">
+            <i class="fa-solid fa-map-location-dot"></i>
+            <p class="ms-3">Street in Cambodia</p>
+          </span>
+          <span class="d-flex ">
+            <i class="fa-solid fa-phone"></i>
+            <p class="ms-3">+855 67 890 456</p>
+          </span>
+          <span class="d-flex ">
+            <i class="fa-solid fa-envelope"></i>
+            <p class="ms-3">Shop123@mail.com</p>
+          </span>
+        
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
+          <h5 class="fw-bold mb-3 ">FOLLOW US</h5>
+          <span class="me-3"><i class="fa-brands fa-facebook"></i></span>
+          <span class="me-3"><i class="fa-brands fa-instagram"></i></span>
+          <span class="me-3"><i class="fa-brands fa-twitter"></i></span>
+          <span class="me-3"><i class="fa-brands fa-pinterest"></i></span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="container mt-5" id="product-details">
+    <!-- Product details will be loaded here -->
+</div>
+</body>
+<!-- <script src="./Project_Shop.js"></script> -->
+</html>
